@@ -1,0 +1,9 @@
+<h1>ClassRooms Edit</h1>
+<%= form_with model: @classroom do |form| %>
+    <%= form.label :Section %>
+  <%= form.text_field :section %>
+  <%= form.label :Course %>
+  <%= form.text_field :course %></p>
+
+  <%= form.submit %>
+<% end %>

@@ -1,0 +1,9 @@
+<h1>ClassRooms#new</h1>
+<h3>Add Class Room</h3>
+<%= form_with model: @classroom do |form| %>
+    <%= form.hidden_field :user_id, value: Current.user.id %>
+  <p> Section: <%= form.text_field :section %></p>
+  <p> course: <%= form.text_field :course %></p>
+
+  <%= form.submit %>
+<% end %>

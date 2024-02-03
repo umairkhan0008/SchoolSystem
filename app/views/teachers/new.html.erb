@@ -1,0 +1,13 @@
+<h1>Create New Teacher</h1>
+<%= form_with model: @teacher do |form| %>
+
+    <%= form.label :Name %>
+    <%= form.text_field :name %>
+    <%= form.label :Subject %>
+    <%= form.text_field :subject %>
+    <%= form.label :classroom_id %>
+    <%= form.text_field :classroom_id %>
+
+
+  <%= form.submit %>
+<% end %>

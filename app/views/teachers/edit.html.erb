@@ -1,0 +1,11 @@
+<h1>Teacher Edit</h1>
+<%= form_with model: @teacher do |form| %>
+    <%= form.label :Name %>
+  <%= form.text_field :name %>
+  <%= form.label :Subject %>
+  <%= form.text_field :suject %>
+  <%= form.label :Classroom_id %>
+    <%= form.text_field :classroom_id %>
+
+  <%= form.submit %>
+<% end %>
